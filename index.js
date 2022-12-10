@@ -129,11 +129,11 @@ const data = {
     blocksModels: require('./minecraft-assets/data/1.19.1/blocks_models')
   },
   '1.19.2': {
-    blocksTextures: require('./minecraft-assets/data/1.19.1/blocks_textures'),
-    itemsTextures: require('./minecraft-assets/data/1.19.1/items_textures'),
-    textureContent: require('./minecraft-assets/data/1.19.1/texture_content'),
-    blocksStates: require('./minecraft-assets/data/1.19.1/blocks_states'),
-    blocksModels: require('./minecraft-assets/data/1.19.1/blocks_models')
+    blocksTextures: require('./minecraft-assets/data/1.19.2/blocks_textures'),
+    itemsTextures: require('./minecraft-assets/data/1.19.2/items_textures'),
+    textureContent: require('./minecraft-assets/data/1.19.2/texture_content'),
+    blocksStates: require('./minecraft-assets/data/1.19.2/blocks_states'),
+    blocksModels: require('./minecraft-assets/data/1.19.2/blocks_models')
   }
 }
 
