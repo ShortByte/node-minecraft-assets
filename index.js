@@ -1,7 +1,7 @@
 const mcDataToNode = require('./lib/loader')
 const cache = {} // prevent reindexing when requiring multiple time the same version
 
-function getVersion (mcVersion) {
+function getVersion(mcVersion) {
   if (cache[mcVersion]) { return cache[mcVersion] }
   const mcData = data[mcVersion]
   if (mcData == null) { return null }
@@ -10,12 +10,12 @@ function getVersion (mcVersion) {
   return nmcData
 }
 
-function toMajor (version) {
+function toMajor(version) {
   const [a, b] = (version + '').split('.')
   return a + '.' + b
 }
 
-function minor (version) {
+function minor(version) {
   const [, , c] = (version + '.0').split('.')
   return parseInt(c, 10)
 }
@@ -30,7 +30,7 @@ module.exports = function (mcVersion) {
 }
 
 const data = {
-  '1.8.8': {
+  /*'1.8.8': {
     blocksTextures: require('./minecraft-assets/data/1.8.8/blocks_textures'),
     itemsTextures: require('./minecraft-assets/data/1.8.8/items_textures'),
     textureContent: require('./minecraft-assets/data/1.8.8/texture_content'),
@@ -99,7 +99,7 @@ const data = {
     textureContent: require('./minecraft-assets/data/1.16.1/texture_content'),
     blocksStates: require('./minecraft-assets/data/1.16.1/blocks_states'),
     blocksModels: require('./minecraft-assets/data/1.16.1/blocks_models')
-  },
+  },*/
   '1.16.4': {
     blocksTextures: require('./minecraft-assets/data/1.16.4/blocks_textures'),
     itemsTextures: require('./minecraft-assets/data/1.16.4/items_textures'),
